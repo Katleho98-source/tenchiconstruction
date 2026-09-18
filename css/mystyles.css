@@ -41,3 +41,51 @@ body {
     padding: 1.5rem;
 }
 
+/* ==========================================================================
+   2. TYPOGRAPHY STYLES
+   ========================================================================== */
+h1, h2, h3, h4 {
+    font-weight: 700;
+    line-height: 1.25;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+h1 { font-size: 2.25rem; color: var(--color-accent-warm); }
+h2 { font-size: 1.75rem; border-bottom: 2px solid var(--color-primary); padding-bottom: 0.25rem; display: inline-block; }
+h3 { font-size: 1.35rem; color: var(--color-text-main); }
+
+p {
+    margin-bottom: 1rem;
+    color: var(--color-text-main);
+}
+
+/* Links & Interactive Navigation */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition-smooth);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+/* Pseudo-Classes: :hover, :focus, :active */
+a:hover, a:focus {
+    color: #ffffff;
+    background-color: var(--color-primary);
+    outline: none;
+}
+
+a:active {
+    transform: scale(0.96);
+}
+
+/* Navigation Links Inline Hierarchy */
+body > a {
+    display: inline-block;
+    margin-right: 0.75rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--color-card-bg);
+    border: 1px solid #3c3836;
+}
