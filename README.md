@@ -42,13 +42,37 @@ This repository contains the complete website proposal and HTML5 multi-page web 
 
 ---
 
+## Technical Specifications & Architecture
+
+* **Color System (Warm Dark Architectural Palette):**
+  * Base Background (`--color-bg-dark`): Deep Slate / Warm Graphite (`#1c1917`)
+  * Card Background (`--color-card-bg`): Warm Dark Gray (`#262321`)
+  * Text Primary (`--color-text-main`): High-contrast off-white (`#f5f5f4`)
+  * Accent Colors: Warm Amber (`#d97706`), Dark Amber (`#b45309`), and Bright Accent Amber (`#f59e0b`)
+* **Typography & Fluid Layouts:**
+  * Primary Font Stack: Aptos, system-ui, sans-serif
+  * Dynamic Grid: Flexible display structures utilizing CSS Grid (`repeat(2, 1fr)`) and Flexbox (`flex-direction: column`)
+  * Responsive Design: Built-in media queries (`@media screen and (max-width: 600px)`) ensuring full accessibility across mobile, tablet, and desktop breakpoints (W3C, 2023).
+
+
 ##  Repository File Architecture
 
-```text
-├── index.html          # Homepage with hero section & core services
-├── about.html          # Company history, mission, vision & workflow
-├── services.html       # Detailed breakdown of drawing & building services
-├── portfolio.html      # Interactive gallery showcasing completed builds & 3D renders
-├── contact.html        # Interactive lead-capture form & office contact details
-├── logo.jpeg           # Official Tenchi Construction branding asset
-└── picture10.jpg       # Hero architectural showcase image
+tenchiconstruction/
+│
+├── css/
+│   └── mystyles.css         # Main stylesheet containing CSS variables, resets, and grid layouts
+├── images/                  # Graphical assets and architectural portfolio imagery
+├── .gitattributes
+├── CHANGELOG.md             # Version control log tracking project milestones
+├── README.md                # Project documentation and specifications
+├── aboutus.html             # Company history, mission, vision, and workflow
+├── contactus.html           # Interactive lead-capture form & office contact details
+├── index.html               # Main landing page with hero section & core services
+├── portfolio.html           # Interactive gallery showcasing completed builds & 3D renderings
+└── services.html            # Detailed breakdown of drawing & building services
+
+
+SS Media Queries*. CSS-Tricks. Available at: <https://css-tricks.com/a-complete-guide-to-css-media-queries/> [Accessed 18 September 2026].
+* MDN Web Docs, 2023. *Using CSS custom properties (variables)*. Mozilla Developer Network. Available at: <https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties> [Accessed 18 September 2026].
+* W3C, 2023. *CSS Grid Layout Module Level 1*. World Wide Web Consortium. Available at: <https://www.w3.org/TR/css-grid-1/> [Accessed 18 September 2026].
+* WhatWG, 2024. *HTML Living Standard: Semantic Elements*. Web Hypertext Application Technology Working Group. Available at: <https://html.spec.whatwg.org/> [Accessed 18 September 2026].
