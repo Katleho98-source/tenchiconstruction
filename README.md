@@ -70,6 +70,29 @@ tenchiconstruction/
 ├── index.html               # Main landing page with hero section & core services
 ├── portfolio.html           # Interactive gallery showcasing completed builds & 3D renderings
 └── services.html            # Detailed breakdown of drawing & building services
+# Project Name
+
+A brief description of what your website does, who it is for, and the main technologies used to build it.
+
+---
+
+Live Demo
+* **Live Website URL:** [https://your-project-url.netlify.app](https://your-project-url.netlify.app)
+
+---
+
+Features
+* Responsive layout optimized for mobile, tablet, and desktop viewports.
+* Interactive client-side JavaScript validation for user enquiry and contact forms.
+* Clean semantic HTML5 structure and modern CSS Grid/Flexbox styling.
+
+---
+
+Built With
+* **HTML5** – Semantic markup and structure
+* **CSS3** – Custom styling, variables, and responsive media queries
+* **JavaScript (ES6+)** – Interactive features and form validation logic
+* **Git & GitHub** – Version control and source code management
 
 
 SS Media Queries*. CSS-Tricks. Available at: <https://css-tricks.com/a-complete-guide-to-css-media-queries/> [Accessed 18 September 2026].
