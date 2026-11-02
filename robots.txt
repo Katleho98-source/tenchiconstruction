@@ -1,0 +1,6 @@
+# Allow all search engine crawlers to index the public pages
+User-agent: *
+Allow: /
+
+# Point to your XML Sitemap
+Sitemap: https://www.tenchiconstruction.co.za/sitemap.xml
