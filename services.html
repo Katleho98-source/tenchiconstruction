@@ -46,5 +46,120 @@
                 <a href="services.html#renovations">Learn More about Renovations</a>
             </article>
         </section>   
+        <!-- Search & Filter Section-->
+<section class="services-search-container">
+  <h2>Explore Our Services</h2>
+  <input type="text" id="serviceSearchInput" placeholder="Search services (e.g., roofing, plumbing, renovation)..." class="search-input">
+  
+  <div class="services-grid" id="servicesGrid">
+    <div class="service-card" data-title="residential building construction">
+      <h3>Residential Construction</h3>
+      <p>Custom home building, structural additions, and full residential turnkey developments.</p>
+    </div>
+    <div class="service-card" data-title="commercial renovation interior remodeling">
+      <h3>Commercial Renovations</h3>
+      <p>Interior remodeling, office partitioning, and structural commercial upgrades.</p>
+    </div>
+    <div class="service-card" data-title="roofing waterproofing structural repairs">
+      <h3>Roofing & Waterproofing</h3>
+      <p>High-grade roof installation, leakage sealing, and structural repairs.</p>
+    </div>
+  </div>
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request a detailed construction quote, service estimation, or sponsorship info from Tenchi Constructions.">
+  <title>Service Enquiry | Tenchi Constructions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>Service & Quote Enquiry</h1>
+    <p>Fill out the form below to receive an instant cost estimate and availability status.</p>
+
+    <form id="enquiryForm" novalidate>
+      <!-- Full Name -->
+      <div class="form-group">
+        <label for="enquiryName">Full Name *</label>
+        <input type="text" id="enquiryName" name="fullName" required placeholder="John Doe">
+        <span class="error-message" id="nameError"></span>
+      </div>
+
+      <!-- Email Address -->
+      <div class="form-group">
+        <label for="enquiryEmail">Email Address *</label>
+        <input type="email" id="enquiryEmail" name="email" required placeholder="john@example.com">
+        <span class="error-message" id="emailError"></span>
+      </div>
+
+      <!-- Phone Number -->
+      <div class="form-group">
+        <label for="enquiryPhone">Phone Number (10 digits) *</label>
+        <input type="tel" id="enquiryPhone" name="phone" required placeholder="0821234567">
+        <span class="error-message" id="phoneError"></span>
+      </div>
+
+      <!-- Service Category -->
+      <div class="form-group">
+        <label for="serviceType">Service Category *</label>
+        <select id="serviceType" name="serviceType" required>
+          <option value="">-- Select a Service --</option>
+          <option value="residential">Residential Renovation (R1,500/m²)</option>
+          <option value="commercial">Commercial Construction (R2,500/m²)</option>
+          <option value="roofing">Roofing & Waterproofing (R800/m²)</option>
+          <option value="sponsorship">Sponsorship & Volunteering (N/A)</option>
+        </select>
+        <span class="error-message" id="serviceError"></span>
+      </div>
+
+      <!-- Project Size in SQM (Conditional for Construction) -->
+      <div class="form-group" id="sqmGroup">
+        <label for="projectSqm">Estimated Project Area (in m²) *</label>
+        <input type="number" id="projectSqm" name="sqm" min="10" max="5000" placeholder="e.g. 150">
+        <span class="error-message" id="sqmError"></span>
+      </div>
+
+      <!-- Additional Details -->
+      <div class="form-group">
+        <label for="enquiryNotes">Project Details & Requirements (Min 15 chars) *</label>
+        <textarea id="enquiryNotes" name="notes" rows="4" placeholder="Describe scope, preferred timeline, location..."></textarea>
+        <span class="error-message" id="notesError"></span>
+      </div>
+
+      <button type="submit" class="btn-submit">Calculate Estimate & Submit</button>
+    </form>
+
+    <!-- Dynamic On-Screen Response Display -->
+    <div id="enquiryResponse" class="response-card hidden" aria-live="polite">
+      <h3>Enquiry Summary & Estimate</h3>
+      <div id="responseContent"></div>
+    </div>
+  </main>
+
+  <script src="enquiry.js"></script>
+</body>
+</section>
+
+<!-- FAQ Accordion Section -->
+<section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+  
+  <div class="accordion-item">
+    <button class="accordion-header">What safety certifications does Tenchi Constructions hold?</button>
+    <div class="accordion-content">
+      <p>We comply fully with NHBRC(National Home Builders Registration Council in South Africa) AND SANS(South African National Standards) regulations and hold SACAP(South African Council for the Architectural Profession) certifications.</p>
+    </div
+  </div>
+
+  <div class="accordion-item">
+    <button class="accordion-header">How do I get a custom cost estimate for my project?</button>
+    <div class="accordion-content">
+      <p>You can fill out our interactive form on the <a href="enquiry.html">Enquiry Page</a> for an instant project estimate.</p>
+    </div>
+  </div>
+</section>
+<script src="js/main.js"></script>
 </body>           
 </html> 
