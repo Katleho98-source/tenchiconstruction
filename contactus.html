@@ -17,27 +17,84 @@
     <h1>Contact Us</h1>
     
     <div style="display: flex; gap: 10px; width: 100%;">
-    <img src="images/picture18.jpg" alt="Render Model 1" style="width: 50%; height: auto; object-fit: cover; border-radius: 6px;">
-    <img src="images/picture23.jpeg" alt="Render Model 2" style="width: 50%; height: auto; object-fit: cover; border-radius: 6px;">
-</div>
-</div>
+    <img src="images/picture22.jpeg" alt="Render Model 1" style="width: 100%; height: auto; object-fit: cover; border-radius: 6px;">
 
+</div>
+</div>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+
+<section class="map-section">
+  <h2>Visit Our Head Office</h2>
+  <div id="map" style="height: 400px; width: 100%; border-radius: 8px;"></div>
+</section>
+
+<script src="js/main.js"></script>
 </body>
     <h1>Start Your Project With Tenchi Construction</h1>
-    <h2>Contact our team for quote requests, drawing consultations, or site visits.</h2> 
-    <br>
-    <br>
-    <h1>Contact Details & Information</h1>
-    <p>Office Address: 123 Industrial Parkway, Construction District, City, 2000
+    <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Tenchi Constructions headquarters for general inquiries, project consultations, and department support.">
+  <title>Contact Us | Tenchi Constructions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <p>Phone Number: +27 (0)76 040 7093</p>
+  <main class="container">
+    <h1>Contact Tenchi Constructions</h1>
+    <p>Have a question or requirement? Direct your message to the appropriate department below.</p>
 
-    <p>Email Address: info@tenchiconstruction.co.za</p>
-    <h1>Business Hours:</h1>
+    <form id="contactForm" novalidate>
+      <!-- Contact Name -->
+      <div class="form-group">
+        <label for="contactName">Your Name *</label>
+        <input type="text" id="contactName" name="name" required placeholder="Jane Smith">
+        <span class="error-message" id="contactNameError"></span>
+      </div>
 
-    <p>Monday – Friday: 07:30 – 17:00</p>
-    <p>Saturday: 08:00 – 13:00 (By Appointment)</p>
-    <p>Sunday & Public Holidays: Closed</p>
+      <!-- Email -->
+      <div class="form-group">
+        <label for="contactEmail">Email Address *</label>
+        <input type="email" id="contactEmail" name="email" required placeholder="jane@example.com">
+        <span class="error-message" id="contactEmailError"></span>
+      </div>
+
+      <!-- Phone -->
+      <div class="form-group">
+        <label for="contactPhone">Phone Number *</label>
+        <input type="tel" id="contactPhone" name="phone" required placeholder="0831234567">
+        <span class="error-message" id="contactPhoneError"></span>
+      </div>
+
+      <!-- Department Dropdown -->
+      <div class="form-group">
+        <label for="department">Target Department *</label>
+        <select id="department" name="department" required>
+          <option value="">-- Select Department --</option>
+          <option value="info@tenchiconstructions.co.za">General Enquiries (Info Desk)</option>
+          <option value="projects@tenchiconstructions.co.za">Project Management & Architecture</option>
+          <option value="billing@tenchiconstructions.co.za">Accounts & Procurement</option>
+        </select>
+        <span class="error-message" id="deptError"></span>
+      </div>
+
+      <!-- Message Textarea -->
+      <div class="form-group">
+        <label for="contactMessage">Your Message (Min 20 characters) *</label>
+        <textarea id="contactMessage" name="message" rows="6" placeholder="Write your query or message here..."></textarea>
+        <span class="error-message" id="contactMsgError"></span>
+      </div>
+
+      <button type="submit" class="btn-submit">Send Message via Email</button>
+    </form>
+
+    <div id="contactStatus" class="status-msg hidden"></div>
+  </main>
+
+  <script src="contact.js"></script>
+</body>
+</html>
 
     
 </html> 
